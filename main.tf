@@ -21,3 +21,9 @@ resource "google_compute_subnetwork" "my-custom-subnet1" {
 
 
 #### test file to push
+
+resource "google_compute_disk" "ram" {
+  name = "ram_reddy_disk"
+  type = "pd-ssd"
+  zone = "us-east1-c"
+}
