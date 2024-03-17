@@ -1,12 +1,11 @@
 provider "google" {
-  project     = "tcb-project-371706"
-  #credentials = file("tcb-project-371706-b114ce01e529.json")
+  project     = "nth-bounty-417116"
   region      = "us-east1"
 
 }
 
 resource "google_compute_network" "vpc1" {
-  name                    = "my-custom-network-1"
+  name                    = "my-first-vpc"
   auto_create_subnetworks = "false"
 
 }
