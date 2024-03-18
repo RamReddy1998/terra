@@ -4,7 +4,7 @@ provider "google" {
 
 }
 
-resource "google_compute_network" "vpc1" {
+resource "google_compute_network" "vpc2" {
   name                    = "my-first-vpc"
   auto_create_subnetworks = "false"
 
@@ -12,8 +12,8 @@ resource "google_compute_network" "vpc1" {
 
 resource "google_compute_subnetwork" "my-custom-subnet1" {
   name          = "my-custom-subnet-1"
-  ip_cidr_range = "10.255.196.0/24"
-  network       = google_compute_network.vpc1.name
+  ip_cidr_range = "10.255.197.0/24"
+  network       = google_compute_network.vpc2.name
   region        = "us-east1"
 }
 
