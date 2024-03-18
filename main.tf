@@ -10,8 +10,8 @@ resource "google_compute_network" "vpc2" {
 
 }
 
-resource "google_compute_subnetwork" "my-custom-subnet1" {
-  name          = "my-custom-subnet-1"
+resource "google_compute_subnetwork" "my-custom-subnet2" {
+  name          = "my-custom-subnet-2"
   ip_cidr_range = "10.255.197.0/24"
   network       = google_compute_network.vpc2.name
   region        = "us-east1"
